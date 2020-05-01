@@ -1,0 +1,58 @@
+/* COLORS */
+@btn-color: #fcb303;
+@ico-color: #46b814;
+@text: #1a1820;
+@error: red;
+@bg-light: #f5f5f5;
+@light: #fff;
+
+/* BASIC SETTING */
+main{
+    margin-top: 20px;
+}
+/* Typography */
+
+/* MAIN  */
+
+@media(min-width:850px){
+.section{
+    display: flex;
+    padding: 1rem 5rem;
+    align-items:center;
+}
+}
+@media(max-width:850px){
+    .section{
+        display: flex;
+        padding: 1rem 5rem;
+        align-items:center;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+}
+.ico{
+    flex:9;
+    margin-top: 5px;
+    img{
+        margin-bottom: 20px;
+    }
+}
+.telephone-link{
+    flex:2.5;
+    a{  
+        color:@text;
+        font-size: 21px;
+        font-weight: 900;
+    }
+}
+.btn-header{
+    flex:3;
+    button{
+        text-transform: uppercase;
+        color: @light;
+        font-size: 16px;
+        background-color: @btn-color;
+        width: 25rem;
+        height: 40px;
+    }
+}
