@@ -1,212 +1,68 @@
-/* COLORS */
-@btn-color: #fcb303;
-@ico-color: #4fcf18cc;
-@text: #1a1820;
-@error: red;
-@bg-light: #f5f5f5;
-@light: #fff;
-@border-input:#dddddd;
+<!DOCTYPE html>
+<html lang="en">
 
-/* FONTS */
-@font-face {
-    font-family: 'Museo Sans Cyrl 700';
-    src: url('../fonts/MuseoSansCyrl-700.eot');
-    src: url('../fonts/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/MuseoSansCyrl-700.woff2') format('woff2'),
-        url('../fonts/MuseoSansCyrl-700.woff') format('woff'),
-        url('../fonts/MuseoSansCyrl-700.ttf') format('truetype'),
-        url('../fonts/MuseoSansCyrl-700.svg#MuseoSansCyrl-700') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Штукатурка стен</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
-@font-face {
-    font-family: 'Museo Sans Cyrl 300';
-    src: url('../fonts/MuseoSansCyrl-300.eot');
-    src: url('../fonts/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
-        url('MuseoSansCyrl-300.woff2') format('woff2'),
-        url('../fonts/MuseoSansCyrl-300.woff') format('woff'),
-        url('../fonts/MuseoSansCyrl-300.ttf') format('truetype'),
-        url('../fonts/MuseoSansCyrl-300.svg#MuseoSansCyrl-300') format('svg');
-    font-weight: 300;
-    font-style: normal;
-}
+	</head>
 
-@font-face {
-    font-family: 'Museo Sans Cyrl 100';
-    src: url('../fonts/MuseoSansCyrl-100.eot');
-    src: url('../fonts/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/MuseoSansCyrl-100.woff2') format('woff2'),
-        url('../fonts/MuseoSansCyrl-100.woff') format('woff'),
-        url('../fonts/MuseoSansCyrl-100.ttf') format('truetype'),
-        url('../fonts/MuseoSansCyrl-100.svg#MuseoSansCyrl-100') format('svg');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Proxima Nova Rg';
-    src: url('../fonts/ProximaNova-Regular.eot');
-    src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
-        url('../fonts/ProximaNova-Regular.woff') format('woff'),
-        url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
-        url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+	<body>
+		<main class="main">
+			<div class="section d-flex p-3 flex-row align-items-center flex-lg-row flex-md-column
+			flex-sm-column flex-column">
+				<div class="ico">
+					<img class="ico-header" src="img/logo1.png" alt="лого)">
+				</div>
+				<div class="telephone-link flex-grow-1">
+					<a class="telephone" href="#"> +7 965 480 00 59</a>
+				</div>
+				<div class="btn-header">
+					<button class="btn">получить консультанцию</button>
+				</div>
+			</div>
+			<div class="section-main-content d-flex p-3 flex-row flex-lg-row flex-md-column
+			flex-sm-column flex-column ">
+				<div class="main-header-1">
+					<div class="main-header">
+						<h1>автоматизированная <br> штукатурка стен</h1>
+						<p>идеально ровные стены <br> в кратчайшие сроки</p>
+					</div>
+					<div class="span ">
+						<span>
+							Стоимость работ от <b>300</b> рублей/м<sup>2</sup>
+						</span>
+						<div class="buy">
+							оплата по факту
+						</div>
+					</div>
+				</div>
+				<div class="empty flex-grow-1">
+				</div>
+				<div class="form-header flex-grow-1">
+					<form action="#" class="form">
+						<div class="form-text">
+						<p> Для рассчета точной стоимости закажите <b>выезд замерщика</b></p></div>
+						<div class="form-name">Ваше имя</div>
+						<div class="form-input">
+						<input class="form-control">
+						<div class="form-telephone">Ваш телефон</div>
+						<input class="form-control"">
+						</div>
+						<div class="form-btn-header">
+						<button class="btn">оставьте заявку</button>
+						</div>
+						<div class="form-text-min">
+							<p>*приедем в день обращения</p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
 
-.reg(){
-    font-family: 'Proxima Nova Rg' , sans-serif;
-}
-.MSbold(){
-    font-family: 'Museo Sans Cyrl 700' , sans-serif;
-}
-.MSreg(){
-    font-family: 'Museo Sans Cyrl 300' , sans-serif;
-}
-
-/* BASIC SETTING */
-.main{
-    background-image: url(../img/bg-1.jpg);
-    background-size: 1450px;
-}
-/* Typography */
-
-/* MAIN  */
-.section{
-    margin: 0 40px;
-    .MSbold();
-}
-.ico-header{
-        margin-bottom: 20px;
-    }
-.telephone-link{
-    text-align: right;
-    margin-right: 1rem;
-}
-.telephone{  
-        color:@text;
-        font-size: 22px;
-        text-transform: uppercase;
-        .MSbold()
-}
-
-.btn{
-        text-transform: uppercase;
-        color: @light;
-        border-radius: 0.7rem;
-        font-size: 1.2rem;
-        background-color: @btn-color;
-        width: 25rem;
-        height: 3rem;
-    
-}   
-.main-header{
-    text-transform: uppercase;
-        p{
-            .MSreg();
-            line-height: 18px;
-            font-size: 18px;
-        }
-        
-        h1{
-            .MSbold();
-            margin-bottom: 30px;
-        }
-}
-
-.section-main-content{
-    margin: 40px;
-    margin-top: 3rem;
-}
-.main-header-1{
-    margin-left: 6rem;
-}
-.span{
-    span{
-    display: block;
-    background: @ico-color;
-    line-height: 1;
-    font-size: 30px;
-    color: @light;
-    width: 24rem;
-    margin-top: 50px;
-    padding: 1rem;
-    border:1px solid black;
-    border-radius: 1rem;
-    .MSreg();
-    }
-    b{
-        font-size: 35px;
-    }
-}
-.buy{
-    .MSbold();
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    margin-left: 18%;
-
-}
-.form{
-    text-align: center;
-    &-header{
-    text-align: right;
-    height: 35rem;
-    width: 1rem;
-    border-radius: 1rem;
-    background-color: #fff;
-    }
-    &-text{
-    font-size: 21px;
-    padding: 2rem 4rem;
-    .reg
-    }
-    &-input{
-    input{
-    display: block;
-    border-radius: 1rem;
-    font-size: 16px;
-    margin: 1rem auto;
-    display: block;
-    height: 60px;
-    width: 25rem;
-    border: @border-input solid 1px;
-
-    }
-    }
-
-    &-btn-header{
-        .btn();
-        .btn{
-            height:5rem;
-            font-size: 1.5rem;    
-        }
-    }
-    
-    &-text-min{
-        p{
-        .reg();
-        font-size: 10px;
-        text-align: left;
-        margin-left: 5rem;
-    }
-    }
-    &-telephone{
-        display: inline-block;
-        .MSreg();
-        font-size: 15px;
-        background: @light;
-        width: 8rem;
-        position: absolute;
-        transform: translateX(-50%) translateY(-9px);
-    }
-    &-name{
-        display: inline-block;
-        .MSreg();
-        font-size: 15px;
-        background: @light;
-        width: 6rem;
-        position: absolute;
-        transform: translateX(-50%);
-    }
-}
+</html>
