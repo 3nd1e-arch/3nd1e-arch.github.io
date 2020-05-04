@@ -7,62 +7,156 @@
 		<title>Штукатурка стен</title>
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">
 		<link rel="shortcut icon" href="img/favicon.ico">
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-
 	</head>
 
 	<body>
 		<main class="main">
-			<div class="section d-flex p-3 flex-row align-items-center flex-lg-row flex-md-column
-			flex-sm-column flex-column">
+			<div class="section d-flex p-3 align-items-center flex-lg-row flex-md-column
+			flex-sm-column flex-column ">
 				<div class="ico">
 					<img class="ico-header" src="img/logo1.png" alt="лого)">
 				</div>
-				<div class="telephone-link flex-grow-1">
+				<div class="telephone-link flex-grow-1 justify-content-end">
 					<a class="telephone" href="#"> +7 965 480 00 59</a>
 				</div>
 				<div class="btn-header">
-					<button class="btn">получить консультанцию</button>
+					<button class="btn"><a href="#test-popup" class="open-popup-link">консультанция</a></button>
 				</div>
 			</div>
-			<div class="section-main-content d-flex p-3 flex-row flex-lg-row flex-md-column
-			flex-sm-column flex-column ">
-				<div class="main-header-1">
-					<div class="main-header">
-						<h1>автоматизированная <br> штукатурка стен</h1>
-						<p>идеально ровные стены <br> в кратчайшие сроки</p>
-					</div>
-					<div class="span ">
-						<span>
-							Стоимость работ от <b>300</b> рублей/м<sup>2</sup>
-						</span>
-						<div class="buy">
-							оплата по факту
-						</div>
-					</div>
+			<div class="section-main-content d-flex p-3 flex-column flex-lg-row flex-md-column
+			flex-sm-column justify-content-center align-items-center">
+				<div class="main-header justify-content-md-center">
+					<h1 class="main-text">автоматизированная <br> штукатурка стен</h1>
+					<p class="main-text">идеально ровные стены <br> в кратчайшие сроки</p>
+				<div class="span">
+					<span>
+						Стоимость работ от <b>300</b> рублей/м<sup>2</sup>
+					</span>
 				</div>
-				<div class="empty flex-grow-1">
 				</div>
-				<div class="form-header flex-grow-1">
-					<form action="#" class="form">
+				<div class="form-header align-self-md-center">
+					<form action="#" class=" form">
 						<div class="form-text">
-						<p> Для рассчета точной стоимости закажите <b>выезд замерщика</b></p></div>
+							<p> Для рассчета точной стоимости закажите <b>выезд замерщика</b></p>
+						</div>
 						<div class="form-name">Ваше имя</div>
 						<div class="form-input">
-						<input class="form-control">
-						<div class="form-telephone">Ваш телефон</div>
-						<input class="form-control"">
+							<input class="form-control">
+							<div class="form-telephone">Ваш телефон</div>
+							<input class="form-control"">
 						</div>
 						<div class="form-btn-header">
-						<button class="btn">оставьте заявку</button>
+							<button class="btn">оставьте заявку</button>
 						</div>
 						<div class="form-text-min">
 							<p>*приедем в день обращения</p>
 						</div>
 					</form>
 				</div>
+		</div>
+			<div class="d-flex flex-column flex-sm-row flex-md-row flex-lg-row justify-content-center align-items-center flex-wrap section-features">
+				<div class="features-header">
+				<h2 class="p-1">
+					Подарок в день обращения
+				</h2>
+				</div>
+				<div class="features-slider">
+					<div class="swiper-container">
+						<div class="d-flex flex-sm-row flex-md-row flex-lg-row swiper-wrapper ">
+							<div class="flex-column swiper-slide"><img src="img/features/pig.png" alt="">
+								<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores laboriosam, harum
+									ipsum in eum nisi?</p>
+							</div>
+							<div class="flex-column swiper-slide"><img src="img/features/folder.png" alt="">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores laboriosam, harum
+									ipsum in eum nisi?</p>
+							</div>
+							<div class="flex-column swiper-slide"><img src="img/features/coin.png" alt="">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores laboriosam, harum
+									ipsum in eum nisi?</p>
+							</div>
+							<div class="flex-column swiper-slide"><img src="img/features/clock.png" alt="">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores laboriosam, harum
+									ipsum in eum nisi?</p>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
 			</div>
+			<div id="test-popup" class="white-popup mfp-hide">
+				<div class="form-header align-self-md-center">
+					<form action="#" class=" form">
+						<div class="form-text">
+							<h1>Заинтересовало?</h1>
+							<p> Оставьте контактные данные для связи</p>
+						</div>
+						<div class="form-name">Ваше имя</div>
+						<div class="form-input">
+							<input class="form-control">
+							<div class="form-telephone">Ваш телефон</div>
+							<input class="form-control"">
+						</div>
+						<div class="form-text-area">Сообщение</div>
+						<div class="form-area">
+							<textarea cols="49" rows="6"></textarea>
+						</div>
+						<div class="form-btn-header">
+							<button class="btn">оставьте заявку</button>
+						</div>
+					</form>
+				</div>
+			  </div>
 		</main>
+	</body>
+		<!-- СКРИПТЫ -->
+		<script src="https://code.jquery.com/jquery-3.5.0.min.js"
+			integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/swiper/js/swiper.js"> </script>
+		<script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				/* DEFAULTS */
+				slidesPerView: 4,
+				spaceBetween: 0,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				navigation: {
+        				nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+				},
+				breakpoints: {
+					1366: {
+						slidesPerView: 4,
+						spaceBetween: 0
+					},
+					// when window width is >= 320px
+					360: {
+						slidesPerView: 1,
+						spaceBetween: 0
+					},
+					// when window width is >= 640px
+					800: {
+						slidesPerView: 2,
+						spaceBetween: 0
+					}
 
+				}
+			});
+		</script>
+		<script src="js/jquery.magnific-popup.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script>
+		$('.open-popup-link').magnificPopup({
+		type:'inline',
+		midClick: true
+		});
+		</script>
 </html>
