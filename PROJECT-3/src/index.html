@@ -12,10 +12,12 @@
 		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
 		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	</head>
 
 	<body>
 		<main class="main">
+			<div class="head">
 			<div class="section d-flex p-3 align-items-center flex-lg-row flex-md-column
 			flex-sm-column flex-column ">
 				<div class="ico">
@@ -33,11 +35,11 @@
 				<div class="main-header justify-content-md-center">
 					<h1 class="main-text">автоматизированная <br> штукатурка стен</h1>
 					<p class="main-text">идеально ровные стены <br> в кратчайшие сроки</p>
-				<div class="span">
-					<span>
-						Стоимость работ от <b>300</b> рублей/м<sup>2</sup>
-					</span>
-				</div>
+					<div class="span">
+						<span>
+							Стоимость работ от <b>300</b> рублей/м<sup>2</sup>
+						</span>
+					</div>
 				</div>
 				<div class="form-header align-self-md-center">
 					<form action="#" class=" form">
@@ -50,7 +52,7 @@
 							<div class="form-telephone">Ваш телефон</div>
 							<input class="form-control"">
 						</div>
-						<div class="form-btn-header">
+						<div class=" form-btn-header">
 							<button class="btn">оставьте заявку</button>
 						</div>
 						<div class="form-text-min">
@@ -58,12 +60,15 @@
 						</div>
 					</form>
 				</div>
+			</div>
 		</div>
-			<div class="d-flex flex-column flex-sm-row flex-md-row flex-lg-row justify-content-center align-items-center flex-wrap section-features">
+	</main>
+			<div
+				class="d-flex flex-column flex-sm-row flex-md-row flex-lg-row justify-content-center align-items-center flex-wrap section-features">
 				<div class="features-header">
-				<h2 class="p-1">
-					Подарок в день обращения
-				</h2>
+					<h2 class="p-1">
+						Преимущества работы с нами
+					</h2>
 				</div>
 				<div class="features-slider">
 					<div class="swiper-container">
@@ -102,61 +107,153 @@
 							<div class="form-telephone">Ваш телефон</div>
 							<input class="form-control"">
 						</div>
-						<div class="form-text-area">Сообщение</div>
+						<div class=" form-text-area">Сообщение
+						</div>
 						<div class="form-area">
-							<textarea cols="49" rows="6"></textarea>
+							<textarea cols="44" rows="6"></textarea>
 						</div>
 						<div class="form-btn-header">
 							<button class="btn">оставьте заявку</button>
 						</div>
 					</form>
 				</div>
-			  </div>
-		</main>
-	</body>
-		<!-- СКРИПТЫ -->
-		<script src="https://code.jquery.com/jquery-3.5.0.min.js"
-			integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-		<script src="https://unpkg.com/swiper/js/swiper.js"> </script>
-		<script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
-		<script>
-			var swiper = new Swiper('.swiper-container', {
-				/* DEFAULTS */
-				slidesPerView: 4,
-				spaceBetween: 0,
-				pagination: {
-					el: '.swiper-pagination',
-					clickable: true,
-				},
-				navigation: {
-        				nextEl: '.swiper-button-next',
-						prevEl: '.swiper-button-prev',
-				},
-				breakpoints: {
-					1366: {
-						slidesPerView: 4,
-						spaceBetween: 0
-					},
-					// when window width is >= 320px
-					360: {
-						slidesPerView: 1,
-						spaceBetween: 0
-					},
-					// when window width is >= 640px
-					800: {
-						slidesPerView: 2,
-						spaceBetween: 0
-					}
+			</div>
+			<div class="section-prices d-flex p-5 justify-content-end flex-wrap">
+				<div class="section-prices-header-block-1">
+					<h1>Цены</h1>
+					<h4>Выберите вариант, который подходит вам</h4>
+				</div>
+				<div class="section-prices-header-block-2-btn form-btn-header">
+					<button class="btn section-prices-block-2-btn">РАССЧИТАТЬ ТОЧНУЮ СТОИМОСТЬ</button>
+				</div>
+			</div>
+			<div class="section-prices-main d-flex justify-content-center flex-wrap">
+				<div class="section-prices-main-block-1 price">
+					<h1>Штукатурка под материалом</h1><img src="img/prices/priceimg1.jpg">
+					<p class="">от 300 руб/м<sup>2</sup></p>
 
+					<ul class="price-list">
+						<li>Проведение работ</li>
+						<li>Уборка</li>
+					</ul>
+
+					<div class="section-prices-main-block-1-btn form-btn-header">
+						<button class="btn section-prices-block-2-btn">ЗАКАЗАТЬ</button>
+					</div>
+				</div>
+				<div class="section-prices-main-block-2 price">
+					<h1>Штукатурка под шпаклевку</h1><img src="img/prices/priceimg2.jpg">
+					<p>от 530 руб/м<sup>2</sup></p>
+
+					<ul class="price-list">
+						<li>Проведение работ</li>
+						<li>Уборка</li>
+						<li>Завоз материала</li>
+						<li>Гарантия 2 года</li>
+					</ul>
+					<div class="section-prices-main-block-2-btn form-btn-header ">
+						<button class="btn section-prices-block-2-btn">ЗАКАЗАТЬ</button>
+					</div>
+				</div>
+				<div class="section-prices-main-block-3 price">
+					<h1>Штукатурка под обои</h1><img src="img/prices/priceimg3.jpg">
+					<p>от 560 руб/м<sup>2</sup></p>
+
+					<ul class="price-list">
+						<li>Завоз материала и его объем</li>
+						<li>Проведение работ</li>
+						<li>Уборка</li>
+						<li>Гарантия 2 года</li>
+						<li>Можно сразу клеить обои</li>
+					</ul>
+
+					<div class="section-prices-main-btn form-btn-header">
+						<button class="btn section-prices-block-2-btn">заказать</button>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="section-feedback">
+					<div class="section-feedback-header">
+						<h1>Отзывы</h1>
+					</div>
+					<div class="section-feedback-slider-feedback">
+						<div class="swiper-container-2">
+							<div class="swiper-wrapper">
+							  <div class="swiper-slide"></div>
+							  <div class="swiper-slide"></div>
+							  <div class="swiper-slide"></div>
+							</div>
+							<!-- Add Pagination -->
+							<div class="swiper-pagination"></div>
+							<!-- Add Arrows -->
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						  </div>
+					</div>
+				</div>
+			</div>
+	</body>
+	<!-- СКРИПТЫ -->
+	<script src="https://code.jquery.com/jquery-3.5.0.min.js"
+		integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/swiper/js/swiper.js"> </script>
+	<script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			/* DEFAULTS */
+			slidesPerView: 4,
+			spaceBetween: 0,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			breakpoints: {
+				1366: {
+					slidesPerView: 4,
+					spaceBetween: 0
+				},
+				// when window width is >= 320px
+				360: {
+					slidesPerView: 1,
+					spaceBetween: 0
+				},
+				// when window width is >= 640px
+				800: {
+					slidesPerView: 2,
+					spaceBetween: 0
 				}
-			});
-		</script>
-		<script src="js/jquery.magnific-popup.js"></script>
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script>
-		$('.open-popup-link').magnificPopup({
-		type:'inline',
-		midClick: true
+
+			}
 		});
-		</script>
+	</script>
+	<script>
+		var swiper = new Swiper('.swiper-container-2', {
+		  pagination: {
+			el: '.swiper-pagination',
+			type: 'progressbar',
+		  },
+		  navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		  },
+		});
+	  </script>
+	<script src="js/jquery.magnific-popup.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script>
+		$('.open-popup-link').magnificPopup({
+			type: 'inline',
+			midClick: true
+		});
+	</script>
+	
+	
+
 </html>
